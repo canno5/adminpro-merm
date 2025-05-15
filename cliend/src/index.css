@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+html {
+  font-size: 62.5%;
+
+}
+.container {
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 10rem;
+  align-items: center;
+  padding: 3.2rem 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.bg-none {
+  background: none;
+}
+
+.containers {
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 10rem;
+
+}
+
+.container .logo-brand {
+  grid-column: 2/3;
+}
+
+.logo-brand a {
+  color: #fff !important;
+  font-size: 2.8rem !important;
+
+}
+
+.container ul {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+
+}
+.container ul li {
+  list-style: none;
+}
+
+.logo-brand a,
+ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding-bottom: .2rem;
+  color: #becdde;
+  font-weight: 500;
+  width: 0%;
+  display: block;
+  letter-spacing: .1rem;
+  white-space: nowrap;
+  border-bottom: 4px solid #d6d6d6;
+  transition: .5s ease-out;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #fff;
+  width: 100%;
+}
+
+
+.sletion-registraction {
+  height: 90vh;
+}
+
+.container-grid {
+  display: grid;
+  height: inherit;
+  align-items: center;
+ 
+}
+
+.container-grid.grid-two-cols {
+  grid-template-columns: 10rem 1fr 1fr 10rem;
+}
+
+.container-grid.grid-one-cols {
+  grid-template-columns: 10rem 1fr 10rem;
+}
+
+.container-grid.grid-one-cols .registraction-form {
+  grid-column: 2/3;
+  width: 50%;
+}
+.hero-imgs,
+.hero .hero-info,
+.registraction-img {
+  grid-column: 2/3;
+}
+.registraction-img img,
+.hero-img img,
+.hero-imgs img {
+  width: 100%;
+}
+
+.registraction-form {
+  padding: .8rem 2rem;
+}
+
+.heading-register {
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+.inputBox {
+  padding: 1rem 0;
+}
+
+.inputBox label {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.inputBox input,
+.inputBox textarea {
+  padding: 1.5rem 1rem;
+  background: #e9e7e7;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 90%;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+
+tbody tr td a,
+tbody tr td button,
+.card button,
+.herobtn button,
+.registraction-form button {
+  padding: 1.2rem 2.2rem;
+  background: dodgerblue;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 30px;
+  margin-top: .5rem;
+  transition: .6s ease-out;
+}
+
+.registraction-form button:hover {
+  background-color: #084182;
+}
+
+.hero-info {
+  width: 100%;
+}
+
+.hero-info h5,
+.errinfo h4 {
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.hero-info h1 {
+  font-size: 4.5rem;
+  padding: 1.5rem 0;
+}
+
+.errinfo p,
+.hero-info p {
+  color: #777;
+  font-size: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.herobtn button {
+  border-radius: 10px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.herobtn button:nth-child(2) {
+  background: none;
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+}
+
+.project-overview {
+  background: #e9e7e7;
+  grid-column: 2/3;
+  display: flex;
+}
+
+.project-overview .details {
+  border-right: 2px solid;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.project-overview .details:last-child {
+  border: none;
+}
+
+
+.details h4 {
+  font-size: 4rem;
+}
+
+.details p {
+  font-size: 2rem;
+  color: #000;
+  padding: .4rem 0;
+  font-weight: 500;
+}
+
+.hero-infos {
+  grid-column: 3/4 !important;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.error {
+  height: inherit;
+  place-content: center;
+}
+
+.errImage {
+  width: 50%;
+  margin: auto;
+}
+
+.errImage h1 {
+  font-size: calc(30rem + 1rem);
+  text-align: center;
+  text-shadow: 4px 4px 10px rgba(209, 27, 27, 0.8);
+}
+.errinfo {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.errinfo h4 {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  padding: .8rem 0;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.errbtn {
+  margin-top: 2.5rem;
+}
+
+.errbtn button {
+  border: 4px solid rgba(209, 27, 27, 0.5) !important;
+  border-radius: 50px;
+  background: none;
+  text-transform: uppercase;
+  padding: .8rem 2rem;
+}
+
+.errbtn button a {
+  color: #084182;
+  text-decoration: none;
+  transition: .5s ease-out;
+}
+
+.errbtn button:hover {
+  background: rgba(209, 27, 27, 0.8);
+}
+
+.errbtn button:hover a {
+  color: #fff;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  25% {
+    background-position: 100% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .6px;
+}
+.services {
+  display: grid;
+  width: 88%;
+  margin: 5rem auto;
+  gap: 2.3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.8);
+  border: 2px solid #777;
+  padding: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+.card-body {
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.card-text {
+  color: #777;
+  font-size: 1.6rem;
+}
+
+.card button {
+  margin-top: 1.5rem;
+}
+
+.provide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.provide p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.provide p:first-child {
+  color: #000;
+  padding-bottom: .5rem;
+}
+
+.provide p:last-child {
+  color: red;
+}
+
+.toastBody {
+  color: #10171D;
+  font-size: 1.45rem;
+}
+
+.container-admin nav {
+  grid-column: 2/3;
+}
+
+.container-admin ul {
+  justify-content: start;
+}
+
+.container-admin ul li a {
+  color: #777;
+  text-transform: capitalize;
+}
+
+.container-admin ul li a:hover,
+.container-admin ul li a.active {
+  color: #000;
+}
+
+.admin-user-section h1 {
+  font-size: 3.9rem;
+  grid-column: 2/3;
+  font-weight: 500;
+}
+.admin-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 85vw;
+  background: #f4f4f4;
+  border-radius: 9px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+  grid-column: 2/3;
+  padding: 0 1rem;
+
+}
+
+.theader tr td {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #000;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #000;
+}
+
+tbody tr {
+  border-bottom: 1px solid red !important;
+}
+
+tbody tr td {
+  font-size: 1.5rem;
+  color: #777;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #777
+}
+
+tbody tr td a,
+tbody tr td button {
+  padding: .8rem 2.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+tbody tr td:nth-child(4) button:hover {
+  background: green;
+}
+
+tbody tr td:last-child button:hover {
+  background: red;
+}
+.p-0 {
+  padding: 0;
+}
+
+.admin_vertical_center {
+  display: grid;
+  place-items: center;
+}
+
+.adminForm {
+  width: 50%;
+}
+.text-center {
+  text-align: center;
+}
+.d-bock {
+  display: block;
+}
+.mx-auto {
+  margin: auto;
+}
+.countdown{
+ display: flex;
+ justify-content: center;
+}
+.countdown div{
+  font-size: 9rem;
+}
+.fs-5{
+  font-size: 4.9rem;
+  margin-top: 5rem;
+}
