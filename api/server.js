@@ -2,13 +2,13 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const cors = require("cors");
-const connectDB = require("./db/conn");
+const connectDB = require("../db/conn");
 const path = require('path');
-const authRoute = require("./router/route");
-const contactRoute = require("./router/route");
-const serviceRoute = require("./router/services-router");
-const adminRoute  = require("./router/admin-route");
-const errMiddleware = require("./middlewares/error-milddleware");
+const authRoute = require("../router/route");
+const contactRoute = require("../router/route");
+const serviceRoute = require("../router/services-router");
+const adminRoute  = require("../router/admin-route");
+const errMiddleware = require("../middlewares/error-milddleware");
 const corsOptions = {
     origin: 'http://localhost:5173',
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
