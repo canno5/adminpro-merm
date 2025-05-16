@@ -14,7 +14,7 @@ const corsOptions = {
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true
 };
-const staticPath = path.join(__dirname, "./cliend/dist");
+const staticPath = path.join(__dirname, "../cliend/dist");
 app.use(cors(corsOptions));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
