@@ -26,7 +26,7 @@ app.use(errMiddleware);
 app.use(express.static(staticPath));
 
 app.get('/*',(rq,res)=>{
-    res.sendFile(path.join(__dirname, './cliend/dist', 'index.html'));
+    res.sendFile(path.join(__dirname, '../cliend/dist', 'index.html'));
 });
 
 const PORT = 4000 || process.env.PORT;
