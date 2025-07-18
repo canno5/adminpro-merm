@@ -26,7 +26,9 @@ app.use(errMiddleware);
 app.use(express.static(staticPath));
 
 app.get('/*',(rq,res)=>{
-    res.sendFile(path.join(__dirname, '../cliend/dist', 'index.html'));
+    // res.sendFile(path.join(__dirname, '../cliend/dist', 'index.html'));
+    res.status(404).send("<h1>404 Error does'nt not found Please Correct URL");
+    
 });
 
 const PORT = 4000 || process.env.PORT;
